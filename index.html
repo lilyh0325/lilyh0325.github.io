@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          background-color: lightseagreen;
+        }
+
+        #card {
+          width: 744px;
+          height: 528px;
+          background-color: white;
+          position: relative;
+        }
+
+        #intro{
+          width:238px;
+          height:284px;
+          background-color:darkslategray;
+          position:absolute;
+          left: 0px;
+          bottom:0;
+          color:white;
+          Padding-left:24px;
+        }
+
+        #center{
+          width: 320px;
+          height:528px;
+          position: absolute;
+          left:238px;
+          color:gray;
+          padding-left: 24px;
+        }
+      h2{
+        color:lightseagreen;
+      }
+
+      #right{
+        width: 186px;
+        height:528px;
+        position:absolute;
+        right:0;
+      }
+
+
+      .skill{
+        width: 138px;
+        height:32px;
+        position: relative;
+        color:gray;
+        margin-top:12px;
+      }
+
+      .gray-bar{
+        width: 138px;
+        height: 12px;
+        background-color:lightgray;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .green-bar{
+        width:123px;
+        height:12px;
+        background-color:lightgreen;
+        position:absolute;
+        bottom:0;
+        border-radius:6px;
+      }
+       .green-bar-2{
+        width:123px;
+        height:12px;
+        background-color:lightgreen;
+        position:absolute;
+        bottom: 0;
+        border-radius:6px;
+        width:24px;
+        left:24px;
+      }
+
+      .rught-text{
+        position: absolute ;
+        right:0;
+        top:0;
+        }
+      
+      img{
+        position: absolute;
+        top: 0;
+        left:0;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#img-2").hide();
+
+        $("#img-1").click(function(){
+          $("#img-1").fadeOut();
+          $("#img-2").fadeIn();
+        })
+
+        $("#img-2").click(function(){
+          $("#img-2").fadeOut();
+          $("#img-1").fadeIn();
+      });
+    </script>
+  </head>
+  <body>
+  <div id="card">
+    <img src="123.jpg" id="img-1" width="238" height="244"/>
+    <img src="234.jpg" id="img-2" width="238" height="244"/>
+      <div id="intro">
+        <h1>Lily Huang</h1>
+        <p>30 years old</p>
+        <p>Taipei</p>
+        <p>Just do it</p>
+      </div>
+     <div id="center">
+         <h2>自我介紹</h2>
+         <p>你好</p>
+         <h2>工作經歷</h2>
+         <u1></u1>
+         <h2>活動經驗</h2>
+         <u1>
+         <li>
+          123 345
+        </li>
+      </u1>
+    </div>
+    <div id="right">
+       <h2>個性</h2>
+       <div class="skill">
+         內向
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar-2" style="left: 50%;""></div>
+          </div>
+        <div class="skill"。>
+          理性
+          <div class="right-text">感性</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar-2" style="left: 50%;""></div>
+          </div>
+       <h2>技能</h2>
+       <div class="skill">
+          HTML
+          <div class="gray-bar"></div>
+          <div class="green-bar" style="width:50%"></div>
+       <div class="skill">
+        CSS
+        <div class="gray-bar"></div>
+        <div class="green-bar" style="width:30%"></div>
+    </div>
+  </div>
+  <ddiv>
+  </body>
+</html>
